@@ -1,7 +1,14 @@
 function generateMarkdown(data) {
-  // console.log(data.projectName)
+  function badge (){
+    if (data.license === "MIT"){
+      return '[!["MIT Badge"]("https://img.shields.io/badge/license-MIT-green")]("https://opensource.org/licenses/MIT")'
+    }
+  }
+  // [![]()](https://opensource.org/licenses/MIT)
+  
   return `
-# ${data.projectName} \n 
+# ${data.projectName} \n
+ ${badge()} \n
 ## Description \n ${data.description} \n
 ## Table of Contents \n * [Installation](#installation) \n * [Usage](#usage) \n * [License](#license) \n * [Contributing](#contributing) \n * [Tests](#tests) \n * [Questions](#questions) \n
 ## Installation \n To install the necessary dependencies, run the following command \n ${data.installDepencies} \n
