@@ -25,19 +25,26 @@ inquirer.prompt([
         message: "Please write a short description of your project?",
     },
     {
-        type: "input",
+        type: "list",
         name: "license",
         message: "What kind of license should your project have?",
+        choices: [
+            "MIT",
+            "Apache",
+            "GPL",
+        ]
     },
     {
         type: "input",
         name: "installDepencies",
         message: "What command should be run to install dependencies?",
+        default: "npm i"
     },
     {
         type: "input",
         name: "tests",
         message: "What command should be run to run tests?",
+        default: "npm test"
     },
     {
         type: "input",
