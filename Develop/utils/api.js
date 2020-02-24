@@ -1,5 +1,5 @@
 const api = {
-  getUser(username) {
+  getUser(gitHubUsername) {
 
   }
 };

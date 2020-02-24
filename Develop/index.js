@@ -1,7 +1,7 @@
 var inquirer = require("inquirer");
 var fs = require("fs");
 var generateMarkdown = require("./utils/generateMarkdown.js")
-
+var api = require("./utils/api.js")
 
 inquirer.prompt([
     {
