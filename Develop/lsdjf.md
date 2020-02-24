@@ -1,7 +1,7 @@
 
 # lsdjf 
 
- [!["MIT Badge"]("https://img.shields.io/badge/license-MIT-green")]("https://opensource.org/licenses/MIT") 
+ [![MIT Badge](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT) 
 
 ## Description 
  lasdfj 
