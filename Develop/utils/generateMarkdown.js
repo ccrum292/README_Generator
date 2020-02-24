@@ -3,7 +3,7 @@ function generateMarkdown(data) {
   return `
 # ${data.projectName} \n 
 ## Description \n ${data.description} \n
-## Table of Contents \n *[Installation](#installation) \n *[Usage](#usage) \n *[License](#license) \n *[Contributing](#contributing) \n *[Tests](#tests) \n *[Questions](#questions) \n
+## Table of Contents \n * [Installation](#installation) \n * [Usage](#usage) \n * [License](#license) \n * [Contributing](#contributing) \n * [Tests](#tests) \n * [Questions](#questions) \n
 ## Installation \n To install the necessary dependencies, run the following command \n ${data.installDepencies} \n
 ## Usage \n ${data.knowAboutRepo} \n
 ## License \n This project is licensed under the ${data.license} license. \n
