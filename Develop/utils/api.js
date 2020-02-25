@@ -20,11 +20,8 @@ const axios = require("axios");
 // module.exports = api;
 
 const api = {
-  getUser(gitHubUsername) {
-    axios.get('https://api.github.com/users/' + gitHubUsername).then((response) => {
-      
-      console.log(response.data.avatar_url)
-  })
+  getUser: function(gitHubUsername) {
+    return axios.get('https://api.github.com/users/' + gitHubUsername)
   }
 }
 

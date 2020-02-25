@@ -1,8 +1,8 @@
 var inquirer = require("inquirer");
 var fs = require("fs");
-// const axios = require("axios");
+const axios = require("axios");
 var generateMarkdown = require("./utils/generateMarkdown.js")
-// var api = require("./utils/api.js")
+var api = require("./utils/api.js")
 
 inquirer.prompt([
     {
@@ -57,17 +57,19 @@ inquirer.prompt([
         name: "contributing",
         message: "What does the user need to know about contributing to the repo?",
     }
-]).then(function(data) {
-    var filename = data.projectName.toLowerCase().split(' ').join('') + ".md";
+]).then(function(results) {
+    
+    api.getUser(results.gitHubUsername).then(({ data }) => {
+      
+        var filename = results.projectName.toLowerCase().split(' ').join('') + ".md";
   
-    fs.writeFile(filename, generateMarkdown(data), function(err) {
-  
-      if (err) {
-        return console.log(err);
-      }
-  
-      console.log("Success!");
-  
+        fs.writeFile(filename, generateMarkdown({...data, ...results}), function(err) {
+      
+          if (err) {
+            return console.log(err);
+          }
+
+    })
     });
   });
 

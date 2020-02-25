@@ -1,10 +1,10 @@
 
-# Test 
+# test 
 
  [![MIT Badge](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT) 
 
 ## Description 
- Testing 
+ This is a test Readme. 
 
 ## Table of Contents 
  * [Installation](#installation) 
@@ -15,23 +15,23 @@
  * [Questions](#questions) 
 
 ## Installation 
- To install the necessary dependencies, run the following command 
+ To install the necessary dependencies, run the following command, 
  npm i 
 
 ## Usage 
- Test Stuff 
+ This is a test. 
 
 ## License 
  This project is licensed under the MIT license. 
 
 ## Contributing 
- More Testing 
+ This is a test. 
 
 ## Tests 
  To run tests, run the following command 
  npm test 
 
 ## Questions 
- <img src='' width='20px'/> 
+ <img src="https://avatars0.githubusercontent.com/u/59706760?v=4" alt="profile picture" width="20px" />) 
  If you have any questions pertaining this repository, please open an issue or contact ccrum292 directly at ccrum292@gmail.com. 
 
