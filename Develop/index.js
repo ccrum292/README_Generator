@@ -1,7 +1,8 @@
 var inquirer = require("inquirer");
 var fs = require("fs");
+// const axios = require("axios");
 var generateMarkdown = require("./utils/generateMarkdown.js")
-var api = require("./utils/api.js")
+// var api = require("./utils/api.js")
 
 inquirer.prompt([
     {
@@ -57,7 +58,6 @@ inquirer.prompt([
         message: "What does the user need to know about contributing to the repo?",
     }
 ]).then(function(data) {
-
     var filename = data.projectName.toLowerCase().split(' ').join('') + ".md";
   
     fs.writeFile(filename, generateMarkdown(data), function(err) {
